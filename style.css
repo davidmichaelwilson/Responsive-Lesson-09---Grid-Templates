@@ -1,0 +1,77 @@
+.alert {
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  
+}
+.alert p {
+  margin-left: 20px;
+  
+}
+
+.alert button {
+  border: solid darkred 2px;
+  border-radius: 5px;
+  background-color: deeppink;
+  color: white;
+  font-size: 16px;
+  
+}
+
+header,footer {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+  
+}
+
+aside {
+    border-right: 1px solid #999;
+  
+}
+
+
+
+
+/* Only edit below this line: */
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat (4, 200px);
+  grid-template-areas: 
+    ". one one one"
+    "two two two two"
+    "three four four four"
+    "five five five five";
+  gap: 20px;
+}
+
+.alert {
+  grid-area: one;
+
+}
+
+header {
+  grid-area: two;
+  
+}
+
+aside {
+  grid-area: three;
+
+}
+
+article {
+  grid-area: four;
+
+}
+
+footer {
+  grid-area: five;
+
+}
+
